@@ -21,8 +21,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${instrumentSans.variable} antialiased`}>
-        {children}
+        <div className="bg-[#fafafa] md:p-4 min-h-screen">{children}</div>
       </body>
     </html>
-  );
+  )
 }
