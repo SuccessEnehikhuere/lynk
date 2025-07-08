@@ -23,8 +23,7 @@ const DashboardClient = () => {
             </section>
           </article>
         </section>
-        {page === 'links' && <LinksPage />}
-        {page === 'profile' && <ProfilePage />}
+        {page === 'profile' ? <ProfilePage /> : <LinksPage />}
       </main>
     </DashboardLayout>
   )
